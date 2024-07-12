@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="employeeDashboard.css">
+    <script src="employeeDashboard.js"></script>
+</head>
+<body>
+    <div class="modal-container hidden" id="modal">
+        <div class="modal">
+            <form id="modalForm" onsubmit="return submitForm(event)">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="modal-nameField" class="modal-text-fields" type="text" placeholder="name">
+                </div>
+                <div>
+                    <label for="designation">Designation</label>
+                    <input id="modal-designationField" class="modal-text-fields" type="text" placeholder="designation">
+                </div>
+                <div>
+                    <label for="dob">Date Of Birth</label>
+                    <input id="modal-dateField" class="modal-text-fields" type="date"  >
+                </div>
+                <button class="btn">ADD USER</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading-div">
+            <h1>Employee List</h1>
+            <button class="btn" onclick="addUser()">ADD USER</button>
+        </div>
+        <div class="headers">
+            <p>NAME</p>
+            <p>DESIGNATION</p>
+            <p>DOB</p>
+            <p>ACTIONS</p>
+        </div>
+        <div class="contents">
+            <div class="data-parent" id="parentDiv">
+
+                <!-- loop this  -->
+
+                <div class="data">
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
