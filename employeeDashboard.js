@@ -178,6 +178,10 @@ async function storeData(name,designation,dob){
     }catch(error){
         alert(error);
     }
-    
-    
+}
+
+function closeModal(event){
+    const modal = document.getElementById('modal');
+    modal.classList.add('hidden');
+    event.preventDefault();
 }

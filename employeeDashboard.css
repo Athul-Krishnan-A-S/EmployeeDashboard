@@ -46,10 +46,11 @@ body {
 
 .buttons{
     display: flex;
+    flex-direction: row !important;
     gap: 1rem;
     justify-content: center;
     place-items: center;
-    width: 30%;
+    /* width: 30%; */
 }
 .btn{
     background-color: orangered;
