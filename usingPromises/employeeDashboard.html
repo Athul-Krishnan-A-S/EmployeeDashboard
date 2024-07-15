@@ -6,6 +6,7 @@
     <title>Employee Dashboard</title>
     <link rel="stylesheet" href="employeeDashboard.css">
     <script src="employeeDashboard.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="modal-container hidden" id="modal">
@@ -24,7 +25,7 @@
                     <input id="modal-dateField" class="modal-text-fields" type="date"  >
                 </div>
                 <div class="buttons">
-                    <button class="btn">ADD USER</button>
+                    <button id="editAddbtn" class="btn">ADD USER</button>
                     <button class="btn" onclick="closeModal(event)">CLOSE</button>
                 </div>
                
