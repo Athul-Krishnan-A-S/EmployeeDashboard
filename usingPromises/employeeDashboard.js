@@ -232,6 +232,7 @@ function deleteUser(id){
 
 function submitForm(event){
     event.preventDefault();
+    console.log("hi")
     const modal = document.getElementById('modal');
     let name = document.getElementById('modal-nameField');
     let designation = document.getElementById('modal-designationField');
@@ -239,15 +240,12 @@ function submitForm(event){
 
     const nameRegex = /^(?! )(?!.* {2})[a-zA-Z]+$/;
     const dobRegex = /^(?:19|20)\d{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01])$/;
-    if(nameRegex.test(name.value) && nameRegex.test(designation.value) && dobRegex.test(dob.value)){
+    if(nameRegex.test(name.value)&& dobRegex.test(dob.value)){
         modal.classList.add('hidden');
         storeData(name.value,designation.value,dob.value);
     }else if(!nameRegex.test(name.value)){
         name.focus();
         alert("enter a valid name");
-    }else if(!nameRegex.test(designation.value)){
-        designation.focus();
-        alert("enter a valid designation");
     }else if(!dobRegex.test(dob.value)){
         dob.focus();
         alert("enter a valid dob");

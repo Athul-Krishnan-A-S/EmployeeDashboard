@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="employeeDashboard.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+
 <body>
     <div class="modal-container hidden" id="modal">
         <div class="modal">
@@ -18,17 +20,22 @@
                 </div>
                 <div>
                     <label for="designation">Designation</label>
-                    <input id="modal-designationField" class="modal-text-fields" type="text" placeholder="designation">
+                    <select id="modal-designationField" class="modal-text-fields">
+                        <option value="SOFTWARE DEVELOPER">SOFTWARE DEVELOPER</option>
+                        <option value="BACKEND DEVELOPER">BACKEND DEVELOPER</option>
+                        <option value="FRONTEND DEVELOPER">FRONTEND DEVELOPER</option>
+                        <option value="DEVOPS">DEVOPS</option>
+                    </select>
                 </div>
                 <div>
                     <label for="dob">Date Of Birth</label>
-                    <input id="modal-dateField" class="modal-text-fields" type="date"  >
+                    <input id="modal-dateField" class="modal-text-fields" type="date">
                 </div>
                 <div class="buttons">
                     <button id="editAddbtn" class="btn">ADD USER</button>
                     <button class="btn" onclick="closeModal(event)">CLOSE</button>
                 </div>
-               
+
             </form>
         </div>
     </div>
@@ -49,13 +56,14 @@
                 <!-- loop this  -->
 
                 <div class="data">
-                    
+
                 </div>
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 </body>
+
 </html>
