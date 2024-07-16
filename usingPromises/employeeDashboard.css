@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.heading-div {
+    display: flex;
+    gap: 2rem;
+}
+
+.headers {
+    display: flex;
+    gap: 5rem;
+}
+
+.headers p {
+    width: 30%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 1rem;
+}
+
+.data {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    place-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    justify-content: center;
+    place-items: center;
+    /* width: 30%; */
+}
+
+.btn {
+    background-color: orangered;
+    width: 6rem !important;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+.btn:hover {
+    background-color: rgb(253, 103, 48);
+}
+
+.data-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.editableFields {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.modal {
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-text-fields {
+    width: 20rem;
+    height: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(max-width:1300px) {
+    .heading-div {
+        gap: 2rem;
+    }
+
+    .headers {
+        gap: 2rem;
+    }
+
+    .headers p {
+        width: 20%;
+        padding: 0.6rem;
+    }
+
+    .data {
+        gap: 2rem !important;
+    }
+
+    .btn {
+        width: 5rem !important;
+    }
+
+    .editableFields {
+        width: 20%;
+    }
+
+    .modal-text-fields {
+        width: 16rem !important;
+        height: 2rem;
+    }
+
+    .modal {
+        width: 60%;
+        height: 40%;
+    }
+
+    .modal .btn {
+        width: 6rem !important;
+    }
+}
+
+@media(max-width:900px) {
+    .container {
+        width: 90%;
+    }
+
+    * {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .heading-div {
+        gap: 1rem;
+    }
+
+    .headers {
+        gap: 1rem;
+    }
+
+    .headers p {
+        width: 20%;
+    }
+
+    .data {
+        gap: 2rem !important;
+    }
+
+    .btn {
+        width: 3rem !important;
+    }
+
+    .btn-start {
+        width: 6rem !important;
+    }
+
+    .editableFields {
+        width: 20%;
+        padding: 0 !important;
+    }
+
+    .modal-text-fields {
+        width: 16rem !important;
+        height: 2rem;
+    }
+
+    .modal {
+        width: 60%;
+        height: 40%;
+    }
+
+    .modal .btn {
+        width: 6rem !important;
+    }
+}
